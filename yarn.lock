@@ -2,6 +2,21 @@
 # yarn lockfile v1
 
 
+"@nuxtjs/axios@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/axios/-/axios-4.3.0.tgz#0e7263d35c0ed2f4fc9e4248c9cd95d38e1ddf3e"
+  dependencies:
+    axios "^0.16.2"
+    chalk "^2.1.0"
+    debug "^3.0.1"
+    whatwg-url "^6.1.0"
+
+"@nuxtjs/bulma@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/bulma/-/bulma-1.0.3.tgz#46f6bdf26ea05f9fa50879deabbeb823b05f62f4"
+  dependencies:
+    bulma "^0.5.1"
+
 "@nuxtjs/youch@3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@nuxtjs/youch/-/youch-3.0.2.tgz#03fff829ca45bd1c3ece84c08270f9686229dd4a"
@@ -236,6 +251,13 @@ aws-sign2@~0.6.0:
 aws4@^1.2.1:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
+
+axios@^0.16.2:
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.16.2.tgz#ba4f92f17167dfbab40983785454b9ac149c3c6d"
+  dependencies:
+    follow-redirects "^1.2.3"
+    is-buffer "^1.1.5"
 
 babel-code-frame@^6.11.0, babel-code-frame@^6.22.0, babel-code-frame@^6.26.0:
   version "6.26.0"
@@ -728,7 +750,7 @@ babel-preset-es2015@^6.24.1:
     babel-plugin-transform-es2015-unicode-regex "^6.24.1"
     babel-plugin-transform-regenerator "^6.24.1"
 
-babel-preset-vue-app@^1.2.1:
+babel-preset-vue-app@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/babel-preset-vue-app/-/babel-preset-vue-app-1.3.0.tgz#4b31f690a353c8735963e06927a072a0bb82126f"
   dependencies:
@@ -960,6 +982,10 @@ builtin-modules@^1.0.0, builtin-modules@^1.1.1:
 builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
+
+bulma@^0.5.1:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.5.3.tgz#be93afb6246192505c30df3f9c1c29a97d319a13"
 
 bytes@2.5.0:
   version "2.5.0"
@@ -1374,7 +1400,7 @@ css-color-names@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/css-color-names/-/css-color-names-0.0.4.tgz#808adc2e79cf84738069b646cb20ec27beb629e0"
 
-css-loader@^0.28.6:
+css-loader@^0.28.7:
   version "0.28.7"
   resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-0.28.7.tgz#5f2ee989dd32edd907717f953317656160999c1b"
   dependencies:
@@ -1490,7 +1516,7 @@ de-indent@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/de-indent/-/de-indent-1.0.2.tgz#b2038e846dc33baa5796128d0804b455b8c1e21d"
 
-debug@2.6.8, debug@^2.2.0, debug@^2.6.8:
+debug@2.6.8, debug@^2.2.0, debug@^2.4.5, debug@^2.6.8:
   version "2.6.8"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.8.tgz#e731531ca2ede27d188222427da17821d68ff4fc"
   dependencies:
@@ -1844,8 +1870,8 @@ eslint-module-utils@^2.1.1:
     pkg-dir "^1.0.0"
 
 eslint-plugin-html@^3.1.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-html/-/eslint-plugin-html-3.2.1.tgz#4289d38245f3d95134d22c17b1894d78db92c572"
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-html/-/eslint-plugin-html-3.2.2.tgz#ef7093621d3a93de3206fd1f92f347ea9a1a4dfa"
   dependencies:
     htmlparser2 "^3.8.2"
     semver "^5.4.1"
@@ -1890,18 +1916,18 @@ eslint-scope@^3.7.1:
     estraverse "^4.1.1"
 
 eslint@^4.3.0:
-  version "4.6.1"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.6.1.tgz#ddc7fc7fd70bf93205b0b3449bb16a1e9e7d4950"
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.7.1.tgz#849804136953ebe366782f9f8611e2cbd1b54681"
   dependencies:
     ajv "^5.2.0"
     babel-code-frame "^6.22.0"
     chalk "^2.1.0"
     concat-stream "^1.6.0"
     cross-spawn "^5.1.0"
-    debug "^2.6.8"
+    debug "^3.0.1"
     doctrine "^2.0.0"
     eslint-scope "^3.7.1"
-    espree "^3.5.0"
+    espree "^3.5.1"
     esquery "^1.0.0"
     estraverse "^4.2.0"
     esutils "^2.0.2"
@@ -1922,7 +1948,7 @@ eslint@^4.3.0:
     natural-compare "^1.4.0"
     optionator "^0.8.2"
     path-is-inside "^1.0.2"
-    pluralize "^4.0.0"
+    pluralize "^7.0.0"
     progress "^2.0.0"
     require-uncached "^1.0.3"
     semver "^5.3.0"
@@ -1931,9 +1957,9 @@ eslint@^4.3.0:
     table "^4.0.1"
     text-table "~0.2.0"
 
-espree@^3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/espree/-/espree-3.5.0.tgz#98358625bdd055861ea27e2867ea729faf463d8d"
+espree@^3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/espree/-/espree-3.5.1.tgz#0c988b8ab46db53100a1954ae4ba995ddd27d87e"
   dependencies:
     acorn "^5.1.1"
     acorn-jsx "^3.0.0"
@@ -2179,6 +2205,12 @@ flat-cache@^1.2.1:
 flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
+
+follow-redirects@^1.2.3:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.2.4.tgz#355e8f4d16876b43f577b0d5ce2668b9723214ea"
+  dependencies:
+    debug "^2.4.5"
 
 for-in@^1.0.1:
   version "1.0.2"
@@ -2965,6 +2997,10 @@ lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
 
+lodash.sortby@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
+
 lodash.template@^4.2.4, lodash.template@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/lodash.template/-/lodash.template-4.4.0.tgz#e73a0385c8355591746e020b99679c690e68fba0"
@@ -3293,9 +3329,9 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
-nuxt@^1.0.0-rc8:
-  version "1.0.0-rc8"
-  resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-1.0.0-rc8.tgz#e073f1b0ce8938b4d0552b1ef68ea70a28d77945"
+nuxt@^1.0.0-rc11:
+  version "1.0.0-rc9"
+  resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-1.0.0-rc9.tgz#74bb73f85b1e92a8ad7d7108386fbecccbe7a3d4"
   dependencies:
     "@nuxtjs/youch" "3.0.2"
     ansi-html "^0.0.7"
@@ -3303,13 +3339,13 @@ nuxt@^1.0.0-rc8:
     babel-core "^6.26.0"
     babel-loader "^7.1.2"
     babel-preset-es2015 "^6.24.1"
-    babel-preset-vue-app "^1.2.1"
+    babel-preset-vue-app "^1.3.0"
     chalk "^2.1.0"
     chokidar "^1.7.0"
     clone "^2.1.1"
     compression "^1.7.0"
     connect "^3.6.3"
-    css-loader "^0.28.6"
+    css-loader "^0.28.7"
     debug "^3.0.1"
     es6-promise "^4.1.1"
     etag "^1.8.0"
@@ -3339,7 +3375,7 @@ nuxt@^1.0.0-rc8:
     serve-static "^1.12.4"
     server-destroy "^1.0.1"
     source-map "^0.5.7"
-    source-map-support "^0.4.16"
+    source-map-support "^0.4.17"
     tappable "^1.1.0"
     url-loader "^0.5.9"
     vue "~2.4.2"
@@ -3624,9 +3660,9 @@ pleeease-filters@^4.0.0:
     onecolor "^3.0.4"
     postcss "^6.0.1"
 
-pluralize@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-4.0.0.tgz#59b708c1c0190a2f692f1c7618c446b052fd1762"
+pluralize@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-7.0.0.tgz#298b89df8b93b0221dbf421ad2b1b1ea23fc6777"
 
 postcss-apply@^0.8.0:
   version "0.8.0"
@@ -4232,6 +4268,10 @@ punycode@^1.2.4, punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
+punycode@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.0.tgz#5f863edc89b96db09074bad7947bf09056ca4e7d"
+
 q@^1.1.2:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.0.tgz#dd01bac9d06d30e6f219aecb8253ee9ebdc308f1"
@@ -4682,9 +4722,15 @@ source-list-map@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/source-list-map/-/source-list-map-2.0.0.tgz#aaa47403f7b245a92fbc97ea08f250d6087ed085"
 
-source-map-support@^0.4.15, source-map-support@^0.4.16:
+source-map-support@^0.4.15:
   version "0.4.17"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.17.tgz#6f2150553e6375375d0ccb3180502b78c18ba430"
+  dependencies:
+    source-map "^0.5.6"
+
+source-map-support@^0.4.17:
+  version "0.4.18"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.18.tgz#0286a6de8be42641338594e97ccea75f0a2c585f"
   dependencies:
     source-map "^0.5.6"
 
@@ -4932,6 +4978,12 @@ tough-cookie@~2.3.0:
   resolved "https://registry.yarnpkg.com/tough-cookie/-/tough-cookie-2.3.2.tgz#f081f76e4c85720e6c37a5faced737150d84072a"
   dependencies:
     punycode "^1.4.1"
+
+tr46@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/tr46/-/tr46-1.0.1.tgz#a8b13fd6bfd2489519674ccde55ba3693b706d09"
+  dependencies:
+    punycode "^2.1.0"
 
 trim-right@^1.0.1:
   version "1.0.1"
@@ -5195,6 +5247,10 @@ watchpack@^1.4.0:
     chokidar "^1.7.0"
     graceful-fs "^4.1.2"
 
+webidl-conversions@^4.0.1:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-4.0.2.tgz#a855980b1f0b6b359ba1d5d9fb39ae941faa63ad"
+
 webpack-bundle-analyzer@^2.9.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/webpack-bundle-analyzer/-/webpack-bundle-analyzer-2.9.0.tgz#b58bc34cc30b27ffdbaf3d00bf27aba6fa29c6e3"
@@ -5267,6 +5323,14 @@ webpack@^3.5.5:
     watchpack "^1.4.0"
     webpack-sources "^1.0.1"
     yargs "^8.0.2"
+
+whatwg-url@^6.1.0:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-6.2.1.tgz#db8fb96d7f02661af266e3cefc18425923900a00"
+  dependencies:
+    lodash.sortby "^4.7.0"
+    tr46 "^1.0.0"
+    webidl-conversions "^4.0.1"
 
 whet.extend@~0.9.9:
   version "0.9.9"
